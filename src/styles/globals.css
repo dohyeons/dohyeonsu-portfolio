@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css');
+
+@layer base {
+	html {
+		font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		color: #1d1d1f;
+	}
+}
+
+/* @layer components {
+	.article-heading {
+		font-size: 44px;
+		font-weight: 900;
+	}
+	.project-heading {
+		font-size: 40px;
+		font-weight: 800;
+	}
+	.project-subHeading {
+		font-size: 20px;
+		font-weight: 700;
+	}
+	.description-heading {
+		font-size: 24px;
+		font-weight: 700;
+	}
+} */
