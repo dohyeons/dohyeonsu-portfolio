@@ -2,7 +2,7 @@
 import { TbSquareRoundedLetterD } from 'react-icons/tb'
 
 export default function Header() {
-	const navMenus: string[] = ['About', 'Skills', 'Projects']
+	const navMenu = ['About', 'Skills', 'Projects']
 
 	return (
 		<header className="border-b h-16 flex justify-center">
@@ -12,12 +12,12 @@ export default function Header() {
 				</button>
 				<nav>
 					<ul className="flex w-nav justify-between ">
-						{navMenus.map((navMenu, idx) => (
+						{navMenu.map((Menu, idx) => (
 							<li
-								key={`${idx.toString()}-${navMenu}`}
+								key={`${idx.toString()}-${Menu}`}
 								className="inline-block text-xl text-nav"
 							>
-								<span>{navMenu}</span>
+								<span>{Menu}</span>
 							</li>
 						))}
 					</ul>
