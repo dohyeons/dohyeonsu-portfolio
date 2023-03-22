@@ -16,7 +16,7 @@ export default function Header() {
 						{navMenu.map((Menu, idx) => (
 							<li
 								key={`${idx.toString()}-${Menu}`}
-								className="inline-block text-xl text-nav"
+								className="inline-block text-xl text-nav hover:cursor-pointer hover:text-inherit transition-colors duration-300"
 							>
 								<span>{Menu}</span>
 							</li>
