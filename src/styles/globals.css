@@ -11,6 +11,11 @@
 	}
 }
 
+@layer components {
+	.headerContainer-reponsive {
+		@apply tablet:mx-9 mobile:mx-6;
+	}
+}
 /* @layer components {
 	.article-heading {
 		font-size: 44px;
