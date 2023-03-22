@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { TbSquareRoundedLetterD } from 'react-icons/tb'
+import { RiStackFill } from 'react-icons/ri'
 
 export default function Header() {
 	const navMenu = ['About', 'Skills', 'Projects']
@@ -21,6 +22,9 @@ export default function Header() {
 							</li>
 						))}
 					</ul>
+					<button type="button">
+						<RiStackFill className="w-7 h-7 text-nav hover:cursor-pointer hover:text-inherit transition-colors duration-300" />
+					</button>
 				</nav>
 			</div>
 		</header>
