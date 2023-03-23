@@ -8,11 +8,14 @@ export default function Header() {
 	return (
 		<header className="border-b h-16 flex justify-center">
 			<div className="w-desktopHeader headerContainer-reponsive h-full flex items-center justify-between">
-				<button type="button">
+				<div>
 					<TbSquareRoundedLetterD className="w-10 h-10 text-nav hover:cursor-pointer hover:text-inherit transition-colors duration-300 mobile:w-8 mobile:h-8 " />
-				</button>
+				</div>
 				<nav>
-					<ul className="flex w-nav justify-between ">
+					<button type="button" className="hidden mobile:block">
+						<RiStackFill className="w-7 h-7 text-nav hover:cursor-pointer hover:text-inherit transition-colors duration-300" />
+					</button>
+					<ul className="flex w-nav justify-between mobile:hidden">
 						{navMenu.map((Menu, idx) => (
 							<li
 								key={`${idx.toString()}-${Menu}`}
@@ -22,9 +25,6 @@ export default function Header() {
 							</li>
 						))}
 					</ul>
-					<button type="button">
-						<RiStackFill className="w-7 h-7 text-nav hover:cursor-pointer hover:text-inherit transition-colors duration-300" />
-					</button>
 				</nav>
 			</div>
 		</header>
