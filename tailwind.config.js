@@ -8,7 +8,23 @@ module.exports = {
 		'./src/**/*.{js,ts,jsx,tsx}', // src하위 폴더의 모든 js,ts,jsx,tsx 파일들
 	],
 	theme: {
-		extend: {},
+		extend: {
+			width: {
+				nav: '254px',
+				desktopHeader: '953px',
+			},
+			colors: {
+				nav: '#6F6E73',
+			},
+		},
+		container: {
+			center: true,
+		},
+		screens: {
+			mobile: { max: '768px' },
+			tablet: { min: '769px', max: '1023px' },
+			dsektop: '1024px',
+		},
 	},
 	plugins: [],
 }
