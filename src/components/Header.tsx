@@ -11,13 +11,9 @@ export default function Header() {
 		setIsHamburgerClicked(!isHamburgerClicked)
 	}
 	return (
-		<header className="border-b flex justify-center">
+		<header className="border-b flex justify-center ">
 			<div
-				className={`w-desktopHeader my-5 headerContainer-reponsive h-full ${
-					isHamburgerClicked ? 'flex-col' : 'flex'
-				} ${
-					isHamburgerClicked ? 'content-center' : ''
-				} items-center justify-between `}
+				className={`w-desktopHeader my-5 headerContainer-reponsive mobile:flex-col mobile: h-full flex content-center items-center justify-between `}
 			>
 				<div className="flex justify-between w-full ">
 					<div>
@@ -31,11 +27,7 @@ export default function Header() {
 						<RiStackFill className="w-7 h-7 text-nav hover:cursor-pointer hover:text-inherit transition-colors duration-300" />
 					</button>
 				</div>
-				<nav
-					className={`${
-						isHamburgerClicked ? 'block' : 'mobile:hidden'
-					} flex justify-center`}
-				>
+				<nav className="mobile:hidden flex justify-center">
 					<ul className="flex w-nav justify-between">
 						{navMenu.map((Menu, idx) => (
 							<li
@@ -43,6 +35,22 @@ export default function Header() {
 								className="inline-block text-xl text-nav hover:cursor-pointer hover:text-inherit transition-colors duration-300"
 							>
 								<span>{Menu}</span>
+							</li>
+						))}
+					</ul>
+				</nav>
+				<nav
+					className={`hidden ${
+						isHamburgerClicked ? 'mobile:flex' : ''
+					} justify-center w-full`}
+				>
+					<ul className="flex-col w-full content-center">
+						{navMenu.map((Menu, idx) => (
+							<li
+								key={`${idx.toString()}-${Menu}`}
+								className="flex my-6 justify-center text-xl text-nav hover:cursor-pointer hover:text-inherit transition-colors duration-300"
+							>
+								<div>{Menu}</div>
 							</li>
 						))}
 					</ul>
