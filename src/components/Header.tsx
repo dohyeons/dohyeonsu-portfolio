@@ -11,11 +11,9 @@ export default function Header() {
 		setIsHamburgerClicked(!isHamburgerClicked)
 	}
 	return (
-		<header className="border-b flex justify-center ">
-			<div
-				className={`w-desktopHeader my-5 headerContainer-reponsive mobile:flex-col mobile: h-full flex content-center items-center justify-between `}
-			>
-				<div className="flex justify-between w-full ">
+		<header className="border-b flex justify-center">
+			<div className="w-desktopHeader my-5 h-full flex content-center items-center justify-between tablet:mx-9 mobile:mx-6 mobile:flex-col">
+				<div className="w-full flex justify-between">
 					<div>
 						<TbSquareRoundedLetterD className="w-10 h-10 text-nav hover:cursor-pointer hover:text-inherit transition-colors duration-300 mobile:w-8 mobile:h-8 " />
 					</div>
@@ -27,7 +25,7 @@ export default function Header() {
 						<RiStackFill className="w-7 h-7 text-nav hover:cursor-pointer hover:text-inherit transition-colors duration-300" />
 					</button>
 				</div>
-				<nav className="mobile:hidden flex justify-center">
+				<nav className="flex justify-center mobile:hidden">
 					<ul className="flex w-nav justify-between">
 						{navMenu.map((Menu, idx) => (
 							<li
@@ -40,15 +38,15 @@ export default function Header() {
 					</ul>
 				</nav>
 				<nav
-					className={`hidden ${
+					className={`w-full hidden ${
 						isHamburgerClicked ? 'mobile:flex' : ''
-					} justify-center w-full`}
+					} justify-center`}
 				>
-					<ul className="flex-col w-full content-center">
+					<ul className="w-full flex-col content-center">
 						{navMenu.map((Menu, idx) => (
 							<li
 								key={`${idx.toString()}-${Menu}`}
-								className="flex my-6 justify-center text-xl text-nav hover:cursor-pointer hover:text-inherit transition-colors duration-300"
+								className="my-6 text-xl text-nav flex justify-center hover:cursor-pointer hover:text-inherit transition-colors duration-300"
 							>
 								<div>{Menu}</div>
 							</li>
