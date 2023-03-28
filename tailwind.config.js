@@ -15,6 +15,7 @@ module.exports = {
 			},
 			colors: {
 				nav: '#6F6E73',
+				oddBg: '#F5F4F7',
 			},
 		},
 		container: {
