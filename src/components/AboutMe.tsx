@@ -21,7 +21,7 @@ export default function AboutMe() {
 						height={260}
 						className="rounded-md"
 					/>
-					<div className="flex-col h-fit inline-flex tablet:items-center mobile:items-center">
+					<div className="flex-col inline-flex tablet:items-center mobile:items-center">
 						{introduction.map((el, idx) => (
 							<p
 								key={`${idx.toString()}-${el}`}
