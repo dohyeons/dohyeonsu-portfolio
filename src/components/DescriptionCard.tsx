@@ -1,4 +1,6 @@
-export default function DescriptionCard() {
+import { ReactNode } from 'react'
+
+export default function DescriptionCard({ children }: { children: ReactNode }) {
 	return (
 		<section>
 			<h2>CONTACT</h2>
