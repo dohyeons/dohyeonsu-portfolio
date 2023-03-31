@@ -13,21 +13,36 @@ export default function ContactChannel() {
 		},
 		{
 			heading: 'CHANNEL',
-			Github: '010-9936-9771',
-			Blog: 'dohyeonsu63@gmail.com',
+			Github: 'https://github.com/dohyeons',
+			Blog: 'https://velog.io/@ddhhss0603',
 		},
 	]
 
 	return (
 		<section className="flex justify-center px-[22px] bg-evenBg">
 			<div className=" w-[890px] h-[268px] border border-green-600 flex justify-between items-center">
-				<article className="bg-white w-[385px] h-[234px] rounded-[20px] placeholder drop-shadow-cardShadow py-6 flex flex-col justify-between items-center">
-					<h2 className="text-5xl font-black  mobile:text-3xl">CONTACT</h2>
-					<ul className="flex flex-col justify-between h-[90px] text-nav">
-						<li>Phone: 010-9936-9771</li>
-						<li>E-mail: dohyeonsu63@gmail.com</li>
-					</ul>
-				</article>
+				{contactChannelInformation.map((informaion, idx) => (
+					<DescriptionCard
+						size="contactChannel"
+						key={`${informaion.heading}-${idx.toString()}`}
+					>
+						<h2 className="text-5xl font-black  mobile:text-3xl">
+							{informaion.heading}
+						</h2>
+						<ul className="flex flex-col justify-between h-[90px] text-nav">
+							<li>
+								{`${Object.keys(informaion)[1]}: ${
+									informaion[Object.keys(informaion)[1]]
+								}`}
+							</li>
+							<li>
+								{`${Object.keys(informaion)[2]}: ${
+									informaion[Object.keys(informaion)[2]]
+								}`}
+							</li>
+						</ul>
+					</DescriptionCard>
+				))}
 			</div>
 		</section>
 	)
