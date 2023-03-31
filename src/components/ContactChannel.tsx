@@ -1,4 +1,23 @@
+import DescriptionCard from './DescriptionCard'
+
+interface ContactChannelInformation {
+	heading: string
+	[key: string]: string
+}
 export default function ContactChannel() {
+	const contactChannelInformation: ContactChannelInformation[] = [
+		{
+			heading: 'CONTACT',
+			Phone: '010-9936-9771',
+			Email: 'dohyeonsu63@gmail.com',
+		},
+		{
+			heading: 'CHANNEL',
+			Github: '010-9936-9771',
+			Blog: 'dohyeonsu63@gmail.com',
+		},
+	]
+
 	return (
 		<section className="flex justify-center px-[22px] bg-evenBg">
 			<div className=" w-[890px] h-[268px] border border-green-600 flex justify-between items-center">
