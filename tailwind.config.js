@@ -19,7 +19,7 @@ module.exports = {
 				evenBg: '#D9D9D9',
 			},
 			dropShadow: {
-				boxShadow: '1px 1px 10px rgba(0, 0, 0, 0.25)',
+				cardShadow: '1px 1px 10px rgba(0, 0, 0, 0.25)',
 			},
 		},
 		container: {
