@@ -20,7 +20,7 @@ export default function ContactChannel() {
 
 	return (
 		<section className="flex justify-center px-[22px] bg-evenBg">
-			<div className=" w-[890px] flex justify-between items-center tablet:flex-col py-6 tablet:h-[638px]  mobile:flex-col mobile:h-[385px]">
+			<div className=" w-[890px] flex justify-between items-center tablet:flex-col py-6 tablet:h-[560px]  mobile:flex-col mobile:h-[385px]">
 				{contactChannelInformation.map((informaion, idx) => (
 					<DescriptionCard
 						size="contactChannel"
