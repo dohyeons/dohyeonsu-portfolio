@@ -16,6 +16,10 @@ module.exports = {
 			colors: {
 				nav: '#6F6E73',
 				oddBg: '#F5F4F7',
+				evenBg: '#D9D9D9',
+			},
+			dropShadow: {
+				cardShadow: '1px 1px 10px rgba(0, 0, 0, 0.25)',
 			},
 		},
 		container: {
