@@ -30,16 +30,13 @@ export default function ContactChannel() {
 							{informaion.heading}
 						</h2>
 						<ul className="flex flex-col justify-between h-24 text-nav mobile:text-xs mobile:h-14">
-							<li>
-								{`${Object.keys(informaion)[1]}: ${
-									informaion[Object.keys(informaion)[1]]
-								}`}
-							</li>
-							<li>
-								{`${Object.keys(informaion)[2]}: ${
-									informaion[Object.keys(informaion)[2]]
-								}`}
-							</li>
+							{[1, 2].map(num => (
+								<li key={num}>
+									{`${Object.keys(informaion)[num]}: ${
+										informaion[Object.keys(informaion)[num]]
+									}`}
+								</li>
+							))}
 						</ul>
 					</DescriptionCard>
 				))}
