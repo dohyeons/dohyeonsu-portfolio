@@ -11,7 +11,7 @@ export default function DescriptionCard({
 	const sizeVariants: { [key in DescriptionCardProps['size']]: string } = {
 		contactChannel:
 			'w-[385px] h-[234px] mobile:w-[231px] mobile:h-[161px] py-6 justify-between',
-		skills: 'max-w-[234px] h-[348px] py-[24px] px-[20px] mb-[52px]',
+		skills: 'max-w-[234px] py-[24px] px-[20px] mb-9',
 	}
 	return (
 		<article
