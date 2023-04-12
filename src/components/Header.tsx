@@ -11,7 +11,7 @@ export default function Header() {
 		setIsHamburgerClicked(!isHamburgerClicked)
 	}
 	return (
-		<header className="border-b flex justify-center">
+		<header className="border-b flex justify-center fixed top-0 right-0 mb-[73px] bg-white left-0 z-40">
 			<div className="w-desktopHeader my-5 h-full flex content-center items-center justify-between tablet:mx-9 mobile:mx-6 mobile:flex-col">
 				<div className="w-full flex justify-between">
 					<div>
@@ -38,9 +38,9 @@ export default function Header() {
 					</ul>
 				</nav>
 				<nav
-					className={`w-full hidden ${
-						isHamburgerClicked ? 'mobile:flex' : ''
-					} justify-center`}
+					className={`${
+						isHamburgerClicked ? 'h-40' : 'h-0'
+					} hidden mobile:block transition-height duration-500 ease-in-out overflow-hidden`}
 				>
 					<ul className="w-full flex-col content-center">
 						{navMenu.map((Menu, idx) => (
