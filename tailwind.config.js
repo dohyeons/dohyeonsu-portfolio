@@ -20,6 +20,7 @@ module.exports = {
 			},
 			dropShadow: {
 				cardShadow: '1px 1px 10px rgba(0, 0, 0, 0.25)',
+				headingShadow: '1px 1px 2px rgba(0, 0, 0, 0.25)',
 			},
 		},
 		container: {
