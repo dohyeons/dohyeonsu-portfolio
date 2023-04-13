@@ -27,6 +27,26 @@ export default function Projects() {
 							<p className="font-semibold">
 								프로젝트 설명입니다.프로젝트 설명입니다.프로젝트
 							</p>
+							<div className="flex justify-between border border-yellow-500">
+								<button
+									type="button"
+									className=" w-24 h-10 bg-githubButton rounded-lg text-white text-xs font-bold"
+								>
+									GITHUB
+								</button>
+								<button
+									type="button"
+									className="w-24 h-10 bg-blogButton rounded-lg text-white text-xs font-bold"
+								>
+									BLOG
+								</button>
+								<button
+									type="button"
+									className="w-24 h-10 bg-visitButton rounded-lg text-white text-xs font-bold"
+								>
+									VISIT
+								</button>
+							</div>
 						</div>
 					</div>
 				</DescriptionCard>
