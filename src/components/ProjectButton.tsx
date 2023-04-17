@@ -26,7 +26,7 @@ export default function ProjectButton({
 				{buttonName === 'github' && <AiFillGithub className=" w-8 h-8" />}
 				{buttonName === 'blog' && <BiBookBookmark className=" w-8 h-8" />}
 				{buttonName === 'visit' && <TiLocation className=" w-8 h-8" />}
-				<p>{buttonName}</p>
+				<p>{buttonName.toUpperCase()}</p>
 			</div>
 		</Link>
 	)
