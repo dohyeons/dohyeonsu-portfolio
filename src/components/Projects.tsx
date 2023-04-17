@@ -37,16 +37,17 @@ export default function Projects() {
 								{project.subtitle}
 							</p>
 						</div>
-						<div className="flex max-w-[860px] w-full space-x-[20px] border border-red-400">
+						<div className="flex tablet:flex-col tablet:space-x-0 tablet:space-y-[20px] max-w-[860px] w-full space-x-[20px] border border-red-400">
 							<Image
 								alt="프로젝트 이미지"
 								src={project.projectImage}
 								width={460}
 								height={460}
+								className="tablet:w-full"
 							/>
-							<div className="flex flex-col space-y-2 max-w-[405px] w-full border border-lime-300">
+							<div className="flex flex-col space-y-8 items-center max-w-[405px] tablet:max-w-none w-full border border-lime-300">
 								<p className="font-semibold">{project.description}</p>
-								<div className="flex justify-between border border-blue-500">
+								<div className="flex max-w-full gap-3  items-start border border-blue-500">
 									{Object.entries(project.links).map(([link, address], id) => (
 										<ProjectButton
 											buttonName={link}
