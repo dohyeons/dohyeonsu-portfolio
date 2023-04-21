@@ -9,6 +9,9 @@
 		font-weight: 700;
 		color: #1d1d1f;
 	}
+	p {
+		word-break: keep-all;
+	}
 }
 
 @layer components {
