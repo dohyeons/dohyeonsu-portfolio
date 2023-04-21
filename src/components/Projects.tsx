@@ -31,13 +31,13 @@ export default function Projects() {
 						size="projects"
 						key={project.projectTitle + idx.toString()}
 					>
-						<div className="flex flex-col h-[76px] items-center justify-between border border-black">
+						<div className="flex flex-col h-[76px] items-center justify-between">
 							<h3 className="text-4xl font-black mobile:text-2xl">Pillivery</h3>
-							<p className="text-[20px] font-normal text-subtitle">
+							<p className="text-[20px] font-normal mobile:text-sm text-center  text-subtitle">
 								{project.subtitle}
 							</p>
 						</div>
-						<div className="flex tablet:flex-col tablet:space-x-0 tablet:space-y-[20px] max-w-[860px] w-full space-x-[20px] border border-red-400">
+						<div className="flex tablet:flex-col tablet:space-x-0 tablet:space-y-[20px] mobile:flex-col mobile:space-x-0 mobile:space-y-[20px] max-w-[860px] w-full space-x-[20px]">
 							<Image
 								alt="프로젝트 이미지"
 								src={project.projectImage}
@@ -45,9 +45,11 @@ export default function Projects() {
 								height={460}
 								className="tablet:w-full"
 							/>
-							<div className="flex flex-col space-y-8 items-center max-w-[405px] tablet:max-w-none w-full border border-lime-300">
-								<p className="font-semibold">{project.description}</p>
-								<div className="flex max-w-full gap-3  items-start border border-blue-500">
+							<div className="flex flex-col space-y-8 items-center max-w-[405px] tablet:max-w-none mobile:max-w-none w-full">
+								<p className="font-semibold mobile:text-sm">
+									{project.description}
+								</p>
+								<div className="flex max-w-full gap-3 mobile:flex-col  items-start">
 									{Object.entries(project.links).map(([link, address], id) => (
 										<ProjectButton
 											buttonName={link}
