@@ -26,9 +26,9 @@ export default function ProjectButton({
 	return (
 		<Link
 			href={address}
-			className={`flex justify-center ${buttonType[buttonName][0]} items-center mobile:text-xs mobile:w-20 mobile:h-10 w-28 h-12 rounded-lg text-white text-sm font-bold transition-colors duration-300`}
+			className={`flex ${buttonType[buttonName][0]} items-center mobile:text-xs mobile:w-full mobile:h-10 w-28 h-12 rounded-lg text-white text-sm font-bold transition-colors duration-300`}
 		>
-			<div className="flex items-center w-full justify-between">
+			<div className="flex items-center w-full justify-center gap-2">
 				{buttonName === 'github' && (
 					<AiFillGithub className="mobile:w-4 w-8 h-8" />
 				)}

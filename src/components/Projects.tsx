@@ -49,7 +49,7 @@ export default function Projects() {
 								<p className="font-semibold mobile:text-sm">
 									{project.description}
 								</p>
-								<div className="flex max-w-full gap-3 mobile:flex-col  items-start">
+								<div className="flex max-w-full w-full gap-3 mobile:flex-col justify-center ">
 									{Object.entries(project.links).map(([link, address], id) => (
 										<ProjectButton
 											buttonName={link}
