@@ -8,6 +8,10 @@
 		font-size: 16px;
 		font-weight: 700;
 		color: #1d1d1f;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 	}
 	p {
 		word-break: keep-all;
