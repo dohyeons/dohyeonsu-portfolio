@@ -43,7 +43,7 @@ export default function Projects() {
 								src={project.projectImage}
 								width={460}
 								height={460}
-								className="tablet:w-full"
+								className="mobile:w-full tablet:w-full"
 							/>
 							<div className="flex flex-col space-y-8 items-center max-w-[405px] tablet:max-w-none mobile:max-w-none w-full">
 								<p className="font-semibold mobile:text-sm">
