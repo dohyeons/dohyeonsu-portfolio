@@ -13,7 +13,7 @@ export default function DescriptionCard({
 			'w-[385px] h-[234px] tablet:w-[45%] mobile:w-[231px] mobile:h-[161px] py-6 justify-between',
 		skills:
 			'dsektop:max-w-[234px] tablet:w-[42%] mobile:mb-5 py-[20px] px-[20px] mb-9',
-		projects: 'dsektop:max-w-[952px] space-y-[32px]  p-12',
+		projects: 'dsektop:max-w-[952px] space-y-[32px] p-12 mobile:p-5',
 	}
 	return (
 		<article
