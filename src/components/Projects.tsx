@@ -31,7 +31,7 @@ export default function Projects() {
 						size="projects"
 						key={project.projectTitle + idx.toString()}
 					>
-						<div className="flex flex-col h-[76px] items-center justify-between">
+						<div className="flex flex-col gap-2 items-center justify-between">
 							<h3 className="text-4xl font-black mobile:text-2xl">Pillivery</h3>
 							<p className="text-[20px] font-normal mobile:text-sm text-center  text-subtitle">
 								{project.subtitle}
