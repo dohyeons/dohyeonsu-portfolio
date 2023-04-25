@@ -26,15 +26,16 @@ export default function ContactChannel() {
 						size="contactChannel"
 						key={`${informaion.heading}-${idx.toString()}`}
 					>
-						<h2 className="text-5xl font-black  mobile:text-3xl">
+						<h2 className="text-5xl font-black mobile:text-3xl">
 							{informaion.heading}
 						</h2>
-						<ul className="flex flex-col justify-between h-24 text-nav mobile:text-xs mobile:h-14">
+						<ul className="flex flex-col justify-between h-24">
 							{[1, 2].map(num =>
 								informaion[Object.keys(informaion)[0]] === 'CHANNEL' ? (
 									<Link
 										key={num + 1}
 										href={informaion[Object.keys(informaion)[num]]}
+										className="text-nav mobile:text-xs mobile:h-14 hover:text-inherit transition-color duration-300"
 									>
 										<li>
 											{`${Object.keys(informaion)[num]}: ${
@@ -43,7 +44,10 @@ export default function ContactChannel() {
 										</li>
 									</Link>
 								) : (
-									<li key={num}>
+									<li
+										key={num}
+										className="text-nav mobile:text-xs mobile:h-14 hover:text-inherit transition-color duration-300"
+									>
 										{`${Object.keys(informaion)[num]}: ${
 											informaion[Object.keys(informaion)[num]]
 										}`}
