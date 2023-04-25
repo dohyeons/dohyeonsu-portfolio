@@ -6,7 +6,24 @@ import { useState } from 'react'
 export default function Header() {
 	const navMenu = ['About', 'Skills', 'Projects']
 	const [isHamburgerClicked, setIsHamburgerClicked] = useState(false)
-
+	function scrollToElement(element: HTMLElement | null) {
+		window.scrollTo({
+			behavior: 'smooth',
+			top: element?.offsetTop,
+		})
+	}
+	const scrollToTop = () => {
+		if (isHamburgerClicked) setIsHamburgerClicked(false)
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		})
+	}
+	const handleScrollClick = (elementId: string) => {
+		if (isHamburgerClicked) setIsHamburgerClicked(false)
+		const element = document.getElementById(elementId)
+		scrollToElement(element)
+	}
 	function hamburgerButtonClick() {
 		setIsHamburgerClicked(!isHamburgerClicked)
 	}
@@ -14,9 +31,9 @@ export default function Header() {
 		<header className="border-b flex justify-center fixed top-0 right-0 mb-[73px] bg-white left-0 z-40">
 			<div className="w-desktopHeader my-5 h-full flex content-center items-center justify-between tablet:mx-9 mobile:mx-6 mobile:flex-col">
 				<div className="w-full flex justify-between">
-					<div>
+					<button type="button" onClick={scrollToTop}>
 						<TbSquareRoundedLetterD className="w-10 h-10 text-nav hover:cursor-pointer hover:text-inherit transition-colors duration-300 mobile:w-8 mobile:h-8 " />
-					</div>
+					</button>
 					<button
 						type="button"
 						className="hidden mobile:block"
@@ -32,7 +49,9 @@ export default function Header() {
 								key={`${idx.toString()}-${Menu}`}
 								className="inline-block text-xl text-nav hover:cursor-pointer hover:text-inherit transition-colors duration-300"
 							>
-								<span>{Menu}</span>
+								<button type="button" onClick={() => handleScrollClick(Menu)}>
+									<span>{Menu}</span>
+								</button>
 							</li>
 						))}
 					</ul>
@@ -48,7 +67,9 @@ export default function Header() {
 								key={`${idx.toString()}-${Menu}`}
 								className="my-6 text-xl text-nav flex justify-center hover:cursor-pointer hover:text-inherit transition-colors duration-300"
 							>
-								<div>{Menu}</div>
+								<button type="button" onClick={() => handleScrollClick(Menu)}>
+									<div>{Menu}</div>
+								</button>
 							</li>
 						))}
 					</ul>

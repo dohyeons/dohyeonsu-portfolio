@@ -21,7 +21,10 @@ export default function Projects() {
 	]
 
 	return (
-		<section className="flex flex-col items-center bg-evenBg px-9 mobile:px-8 space-y-[70px] py-[70px]">
+		<section
+			id="Projects"
+			className="flex flex-col items-center bg-evenBg px-9 mobile:px-8 space-y-[70px] py-[70px] scroll-smooth"
+		>
 			<h2 className="text-5xl font-black text-white drop-shadow-headingShadow mobile:text-3xl">
 				Projects
 			</h2>

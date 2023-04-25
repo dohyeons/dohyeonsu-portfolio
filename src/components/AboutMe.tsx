@@ -10,7 +10,7 @@ export default function AboutMe() {
 		'자기소개 자기소개 자기소개 자기소개 자기소개자기소개 자기소개 자기소개 자기소개 자기소개',
 	]
 	return (
-		<section className="flex justify-center bg-oddBg mt-[73px]">
+		<section className="flex justify-center bg-oddBg mt-[73px]" id="About">
 			<div className="flex flex-col space-y-[70px] w-desktopHeader items-center p-16">
 				<h2 className="text-5xl font-black text-center  mobile:text-3xl">
 					ABOUT ME
