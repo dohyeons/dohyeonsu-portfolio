@@ -25,7 +25,7 @@ export default function Projects() {
 			id="Projects"
 			className="flex flex-col items-center bg-evenBg px-9 mobile:px-8 space-y-[70px] py-[70px] scroll-smooth"
 		>
-			<h2 className="text-5xl font-black font-black drop-shadow-headingShadow mobile:text-3xl">
+			<h2 className="text-5xl font-black drop-shadow-headingShadow mobile:text-3xl">
 				Projects
 			</h2>
 			<div>
