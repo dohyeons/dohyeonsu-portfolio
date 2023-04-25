@@ -16,7 +16,9 @@ export default function Skills() {
 			id="Skills"
 			className="flex flex-col items-center bg-oddBg px-9 tablet:px-[158px] mobile:px-0 py-[70px] mobile:py-[35px] space-y-[70px] mobile:space-y-[35px]"
 		>
-			<h2 className="text-5xl font-black mobile:text-3xl">SKILLS</h2>
+			<h2 className="text-5xl font-black mobile:text-3xl drop-shadow-headingShadow">
+				SKILLS
+			</h2>
 			<div className="w-[831px] tablet:w-full mobile:w-full tablet:min-w-[520px] mobile:max-w-[230px] flex flex-wrap justify-around">
 				{skillLogo.map((logo, idx) => (
 					<DescriptionCard size="skills" key={logo + idx.toString()}>

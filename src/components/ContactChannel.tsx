@@ -37,7 +37,7 @@ export default function ContactChannel() {
 						size="contactChannel"
 						key={`${informaion.heading}-${idx.toString()}`}
 					>
-						<h2 className="text-5xl font-black mobile:text-3xl">
+						<h2 className="text-5xl font-black mobile:text-3xl drop-shadow-headingShadow">
 							{informaion.heading}
 						</h2>
 						<ul className="flex flex-col justify-around gap-3 h-full">
