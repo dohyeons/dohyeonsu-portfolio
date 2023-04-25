@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import DescriptionCard from './DescriptionCard'
 
 interface ContactChannelInformation {
@@ -17,7 +18,6 @@ export default function ContactChannel() {
 			Blog: 'https://velog.io/@ddhhss0603',
 		},
 	]
-
 	return (
 		<section className="flex justify-center px-[22px] bg-evenBg">
 			<div className=" w-[890px] flex justify-between items-center tablet:flex-col py-6 tablet:h-[560px]  mobile:flex-col mobile:h-[385px]">
@@ -30,13 +30,26 @@ export default function ContactChannel() {
 							{informaion.heading}
 						</h2>
 						<ul className="flex flex-col justify-between h-24 text-nav mobile:text-xs mobile:h-14">
-							{[1, 2].map(num => (
-								<li key={num}>
-									{`${Object.keys(informaion)[num]}: ${
-										informaion[Object.keys(informaion)[num]]
-									}`}
-								</li>
-							))}
+							{[1, 2].map(num =>
+								informaion[Object.keys(informaion)[0]] === 'CHANNEL' ? (
+									<Link
+										key={num + 1}
+										href={informaion[Object.keys(informaion)[num]]}
+									>
+										<li>
+											{`${Object.keys(informaion)[num]}: ${
+												informaion[Object.keys(informaion)[num]]
+											}`}
+										</li>
+									</Link>
+								) : (
+									<li key={num}>
+										{`${Object.keys(informaion)[num]}: ${
+											informaion[Object.keys(informaion)[num]]
+										}`}
+									</li>
+								),
+							)}
 						</ul>
 					</DescriptionCard>
 				))}
