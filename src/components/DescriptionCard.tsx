@@ -10,9 +10,9 @@ export default function DescriptionCard({
 }: DescriptionCardProps) {
 	const sizeVariants: { [key in DescriptionCardProps['size']]: string } = {
 		contactChannel:
-			'w-[385px] h-[234px] tablet:w-[45%] mobile:w-[231px] mobile:h-[161px] py-6 justify-between',
+			'w-[385px] h-[234px] tablet:w-[45%] mobile:w-[231px] mobile:h-[161px] py-6 justify-between hoveredCard',
 		skills:
-			'dsektop:max-w-[234px] tablet:w-[42%] mobile:mb-5 py-[20px] px-[20px] mb-9',
+			'dsektop:max-w-[234px] tablet:w-[42%] mobile:mb-5 py-[20px] px-[20px] mb-9 hoveredCard',
 		projects: 'dsektop:max-w-[952px] space-y-[32px] p-12 mobile:p-5',
 	}
 	return (
