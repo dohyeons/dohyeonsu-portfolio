@@ -3,7 +3,7 @@ import Profile from 'public/Do-hyeonsu_profile.jpeg'
 
 export default function AboutMe() {
 	const introduction = [
-		'안녕하세요 ',
+		'안녕하세요. ',
 		<strong key="emphasis">개발로 세상을 더욱 좋게 만들고 싶은</strong>,
 		' 프론트엔드 개발자 도현수입니다.',
 		<br key="blank1" />,
