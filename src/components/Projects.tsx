@@ -23,7 +23,7 @@ export default function Projects() {
 	return (
 		<section
 			id="Projects"
-			className="flex flex-col items-center bg-evenBg px-9 mobile:px-8 space-y-[70px] py-[70px] scroll-smooth"
+			className="flex flex-col items-center bg-evenBg px-9 mobile:px-8 space-y-[70px] py-[70px]"
 		>
 			<h2 className="text-5xl font-black drop-shadow-headingShadow mobile:text-3xl">
 				Projects
@@ -36,7 +36,7 @@ export default function Projects() {
 					>
 						<div className="flex flex-col gap-2 items-center justify-between">
 							<h3 className="text-4xl font-black mobile:text-2xl">Pillivery</h3>
-							<p className="text-[20px] font-normal mobile:text-sm text-center  text-subtitle">
+							<p className="text-[20px] font-normal mobile:text-sm text-center text-subtitle">
 								{project.subtitle}
 							</p>
 						</div>
