@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { TbSquareRoundedLetterD } from 'react-icons/tb'
 import { RiStackFill } from 'react-icons/ri'
 import { useState } from 'react'

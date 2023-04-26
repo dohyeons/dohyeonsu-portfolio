@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import Link from 'next/link'
 import DescriptionCard from './DescriptionCard'
 
@@ -41,9 +39,15 @@ export default function ContactChannel() {
 							{informaion.heading}
 						</h2>
 						<ul className="flex flex-col justify-around gap-3 h-full">
-							{[1, 2].map(num =>
+							{[1, 2].map((num, id) =>
 								informaion[Object.keys(informaion)[0]] === 'CONTACT' ? (
-									<div key={num} onClick={handleContactClick}>
+									<div
+										onKeyUp={() => {}}
+										key={num}
+										onClick={handleContactClick}
+										role="button"
+										tabIndex={id}
+									>
 										<li className="text-nav mobile:text-xs hover:cursor-pointer hover:text-inherit transition-colors duration-300">
 											{`${Object.keys(informaion)[num]}: ${
 												informaion[Object.keys(informaion)[num]]
