@@ -9,7 +9,6 @@ export default function Skills() {
 		'Redux.svg',
 		'styled-components.svg',
 		'TailwindCSS.svg',
-		'vercel.svg',
 	]
 	return (
 		<section
@@ -19,7 +18,7 @@ export default function Skills() {
 			<h2 className="text-5xl font-black mobile:text-3xl drop-shadow-headingShadow">
 				SKILLS
 			</h2>
-			<div className="w-[831px] tablet:w-full mobile:w-full tablet:min-w-[520px] mobile:max-w-[230px] flex flex-wrap justify-around">
+			<div className="w-[831px] mobile:w-full tablet:w-[520px] gap-4 mobile:max-w-[230px] flex flex-wrap justify-evenly">
 				{skillLogo.map((logo, idx) => (
 					<DescriptionCard size="skills" key={logo + idx.toString()}>
 						<div className="w-32 h-32 mobile:w-[44px] mobile:h-[44px] flex items-center">
@@ -31,15 +30,13 @@ export default function Skills() {
 								className="mobile:w-[44px] mobile:h-[44px]"
 							/>
 						</div>
-						<h4 className="py-3 text-[18px] mobile:hidden">
-							{logo.slice(0, -4)}
-						</h4>
-						<div className="w-full h-[120px] overflow-auto mobile:hidden">
+						<div className=" text-sm mobile:hidden">{logo.slice(0, -4)}</div>
+						{/* <div className="w-full h-[120px] overflow-auto mobile:hidden">
 							<p className="text-nav font-medium">
 								타입과 인터페이스를 상황에 맞게 사용할 수 있습니다.
 								tailwindcss를 사용해서 스타일링을 할 수 있습니다.
 							</p>
-						</div>
+						</div> */}
 					</DescriptionCard>
 				))}
 			</div>
