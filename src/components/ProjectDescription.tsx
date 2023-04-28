@@ -8,7 +8,7 @@ interface ProjectInformation {
 	links: {
 		github: string
 		// blog: string
-		visit: string
+		visit?: string
 	}
 }
 
