@@ -45,6 +45,30 @@ export default function Projects() {
 				visit: 'http://pillivery.s3-website.ap-northeast-2.amazonaws.com/',
 			},
 		},
+		{
+			projectTitle: '개인 포트폴리오',
+			subtitle: '2023.03 ~ 2022.04 개인 포트폴리오 프로젝트 (1인)',
+			projetcImage: 'portfolio.png',
+			description: [
+				<strong key="projectEmphasis6">개인 포트폴리오 사이트이며,</strong>,
+				' 현재 보고 계신 사이트 입니다. ',
+				<br key="projectBlank1" />,
+				<br key="projectBlank2" />,
+				'모든 과정을 혼자 진행했으며, ',
+				<strong key="projectEmphasis2">
+					Nextjs의 학습 및 연습을 위해서 Nextjs로 제작했습니다.
+				</strong>,
+				' 정적으로 보여주는 역할을 하는 포트폴리오의 특성을 이용해 ',
+				<strong key="projectEmphasis3">SSG를 사용했습니다.</strong>,
+			],
+			features: ['깃허브, 블로그, 사이트 방문'],
+			skills: ['Nextjs', 'tailwindcss'],
+			links: {
+				github: 'https://github.com/dohyeons/dohyeonsu-portfolio',
+				// blog: 'https://velog.io/@ddhhss0603/Project-%EC%98%81%EC%96%91%EC%A0%9C-%EC%87%BC%ED%95%91%EB%AA%B0Pillivery-%ED%8C%80-%EB%B9%8C%EB%94%A9-%EB%B0%8F-%EA%B8%B0%ED%9A%8D',
+				visit: 'http://pillivery.s3-website.ap-northeast-2.amazonaws.com/',
+			},
+		},
 	]
 
 	return (
@@ -55,14 +79,16 @@ export default function Projects() {
 			<h2 className="text-5xl font-black drop-shadow-headingShadow mobile:text-3xl">
 				Projects
 			</h2>
-			<div>
+			<div className="flex flex-col gap-12">
 				{projects.map((project, idx) => (
 					<DescriptionCard
 						size="projects"
 						key={project.projectTitle + idx.toString()}
 					>
 						<div className="flex flex-col gap-2 items-center justify-between">
-							<h3 className="text-4xl font-black mobile:text-2xl">Pillivery</h3>
+							<h3 className="text-4xl font-black mobile:text-2xl">
+								{project.projectTitle}
+							</h3>
 							<p className="text-[20px] font-normal mobile:text-sm text-center text-subtitle">
 								{project.subtitle}
 							</p>

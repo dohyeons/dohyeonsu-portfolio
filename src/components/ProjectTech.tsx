@@ -11,7 +11,7 @@ export default function ProjectTech({
 			<ul className="list-disc">
 				{projectTech.map((el, id) => (
 					<li
-						className="font-normal text-[#1d1d1f] text-base mobile:text-sm break-keep"
+						className="font-normal text-[#1d1d1f] text-base mobile:text-sm break-keep ml-5"
 						key={el + id.toString()}
 					>
 						{el}

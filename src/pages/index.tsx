@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import Header from '@/components/Header'
 import AboutMe from '@/components/AboutMe'
 import ContactChannel from '@/components/ContactChannel'
@@ -6,7 +7,7 @@ import Projects from '@/components/Projects'
 import Footer from '@/components/Footer'
 import Title from '@/components/Title'
 
-export default function Home() {
+export default function Home({ data }: { data: never[] }) {
 	return (
 		<>
 			<Title />
