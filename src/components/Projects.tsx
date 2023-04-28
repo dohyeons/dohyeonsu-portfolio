@@ -66,7 +66,7 @@ export default function Projects() {
 			links: {
 				github: 'https://github.com/dohyeons/dohyeonsu-portfolio',
 				// blog: 'https://velog.io/@ddhhss0603/Project-%EC%98%81%EC%96%91%EC%A0%9C-%EC%87%BC%ED%95%91%EB%AA%B0Pillivery-%ED%8C%80-%EB%B9%8C%EB%94%A9-%EB%B0%8F-%EA%B8%B0%ED%9A%8D',
-				visit: 'http://pillivery.s3-website.ap-northeast-2.amazonaws.com/',
+				// visit: 'http://pillivery.s3-website.ap-northeast-2.amazonaws.com/',
 			},
 		},
 	]

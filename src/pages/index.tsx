@@ -7,7 +7,7 @@ import Projects from '@/components/Projects'
 import Footer from '@/components/Footer'
 import Title from '@/components/Title'
 
-export default function Home({ data }: { data: never[] }) {
+export default function Home() {
 	return (
 		<>
 			<Title />
@@ -19,13 +19,4 @@ export default function Home({ data }: { data: never[] }) {
 			<Footer />
 		</>
 	)
-}
-
-export async function getServerSideProps() {
-	const data: never[] = []
-	return {
-		props: {
-			data,
-		},
-	}
 }
