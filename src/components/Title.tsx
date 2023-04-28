@@ -10,7 +10,7 @@ export default function Title() {
 				key="title"
 			/>
 			<meta
-				name="Description"
+				name="og:description"
 				content="UX에 관심이 많은 프론트엔드 개발자 도현수 입니다."
 			/>
 		</Head>
