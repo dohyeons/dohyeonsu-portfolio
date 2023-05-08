@@ -25,4 +25,7 @@
 	.hoveredCard {
 		@apply transition duration-300 hover:-translate-y-2;
 	}
+	.ProjectButton {
+		@apply mobile:w-4 w-8 h-8;
+	}
 }

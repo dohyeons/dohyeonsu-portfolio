@@ -29,15 +29,9 @@ export default function ProjectButton({
 			className={`flex ${buttonType[buttonName][0]} items-center mobile:text-xs mobile:w-full mobile:h-10 w-28 h-12 rounded-lg text-white text-sm font-bold transition-colors duration-300`}
 		>
 			<div className="flex items-center w-full justify-center gap-2">
-				{buttonName === 'github' && (
-					<AiFillGithub className="mobile:w-4 w-8 h-8" />
-				)}
-				{buttonName === 'blog' && (
-					<BiBookBookmark className="mobile:w-4 w-8 h-8" />
-				)}
-				{buttonName === 'visit' && (
-					<TiLocation className="mobile:w-4 w-8 h-8" />
-				)}
+				{buttonName === 'github' && <AiFillGithub className="ProjectButton" />}
+				{buttonName === 'blog' && <BiBookBookmark className="ProjectButton" />}
+				{buttonName === 'visit' && <TiLocation className="ProjectButton" />}
 				<p>{buttonName.toUpperCase()}</p>
 			</div>
 		</Link>
