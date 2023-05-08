@@ -26,21 +26,3 @@
 		@apply transition duration-300 hover:-translate-y-2;
 	}
 }
-/* @layer components {
-	.article-heading {
-		font-size: 44px;
-		font-weight: 900;
-	}
-	.project-heading {
-		font-size: 40px;
-		font-weight: 800;
-	}
-	.project-subHeading {
-		font-size: 20px;
-		font-weight: 700;
-	}
-	.description-heading {
-		font-size: 24px;
-		font-weight: 700;
-	}
-} */
