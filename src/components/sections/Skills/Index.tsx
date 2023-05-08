@@ -1,15 +1,8 @@
 import Image from 'next/image'
-import DescriptionCard from './DescriptionCard'
+import { skillLogo } from '@/asset/Contants'
+import DescriptionCard from '../../common/DescriptionCard'
 
 export default function Skills() {
-	const skillLogo = [
-		'JavaScript.svg',
-		'TypeScript.svg',
-		'React.svg',
-		'Redux.svg',
-		'styled-components.svg',
-		'TailwindCSS.svg',
-	]
 	return (
 		<section
 			id="Skills"
@@ -31,12 +24,6 @@ export default function Skills() {
 							/>
 						</div>
 						<div className=" text-sm mobile:hidden">{logo.slice(0, -4)}</div>
-						{/* <div className="w-full h-[120px] overflow-auto mobile:hidden">
-							<p className="text-nav font-medium">
-								타입과 인터페이스를 상황에 맞게 사용할 수 있습니다.
-								tailwindcss를 사용해서 스타일링을 할 수 있습니다.
-							</p>
-						</div> */}
 					</DescriptionCard>
 				))}
 			</div>
