@@ -1,16 +1,14 @@
 /* eslint-disable react/function-component-definition */
-import Header from '@/components/Header'
-import AboutMe from '@/components/AboutMe'
-import ContactChannel from '@/components/ContactChannel'
-import Skills from '@/components/Skills'
-import Projects from '@/components/Projects'
-import Footer from '@/components/Footer'
-import Title from '@/components/Title'
+import Header from '@/components/layout/Header'
+import AboutMe from '@/components/sections/AboutMe/Index'
+import ContactChannel from '@/components/sections/ContactChannel/Index'
+import Skills from '@/components/sections/Skills/Index'
+import Projects from '@/components/sections/Projects/Index'
+import Footer from '@/components/layout/Footer'
 
 export default function Home() {
 	return (
 		<>
-			<Title />
 			<Header />
 			<AboutMe />
 			<ContactChannel />

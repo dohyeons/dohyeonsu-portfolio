@@ -1,16 +1,6 @@
-import ProjectButton from './ProjectButton'
+import { ProjectInformation } from '@/type/type.type'
 import ProjectTech from './ProjectTech'
-
-interface ProjectInformation {
-	description: (string | JSX.Element)[]
-	features: string[]
-	skills: string[]
-	links: {
-		github: string
-		// blog: string
-		visit?: string
-	}
-}
+import ProjectButtonGroup from './ProjectButtonGroup'
 
 export default function ProjectDescription({
 	projectInformation,
@@ -30,15 +20,7 @@ export default function ProjectDescription({
 				projectTech={projectInformation.skills}
 				propType="사용 기술"
 			/>
-			<div className="flex max-w-full w-full gap-3 mobile:flex-col justify-center self-center">
-				{Object.entries(projectInformation.links).map(([link, address], id) => (
-					<ProjectButton
-						buttonName={link}
-						address={address}
-						key={link + id.toString()}
-					/>
-				))}
-			</div>
+			<ProjectButtonGroup links={projectInformation.links} />
 		</div>
 	)
 }
