@@ -5,7 +5,7 @@ import { TiLocation } from 'react-icons/ti'
 
 interface ProjectButtonProps {
 	buttonName: string
-	address: string
+	address?: string
 }
 
 export default function ProjectButton({
@@ -31,7 +31,7 @@ export default function ProjectButton({
 
 	return (
 		<Link
-			href={address}
+			href={address ?? ''}
 			className={`flex ${buttonType[buttonName][0]} items-center mobile:text-xs mobile:w-full mobile:h-10 w-28 h-12 rounded-lg text-white text-sm font-bold transition-colors duration-300`}
 		>
 			<div className="flex items-center w-full justify-center gap-2">
